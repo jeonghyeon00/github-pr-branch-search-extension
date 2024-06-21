@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub PR Branch Search",
+    "version": "1.0",
+    "description": "Adds branch search functionality to GitHub PR pages.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://github.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
