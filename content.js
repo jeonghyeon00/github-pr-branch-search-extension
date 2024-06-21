@@ -2,6 +2,7 @@ console.log("Hello from content.js");
 
 window.addEventListener("load", function () {
   const currentUrl = window.location.href;
+  if (!currentUrl.includes("compare/")) return;
   const urlParts = currentUrl.split("/");
   var username = urlParts[3];
   var reponame = urlParts[4];
